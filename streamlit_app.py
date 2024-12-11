@@ -549,10 +549,8 @@ def main():
         doc_content = save_docs(data_monetize_result_df=data_monetization_strategy_framework_df, 
                                 data_arch_result_df=data_architecture_framework_df)
             
-        st.title("Download Word Document")
-        st.write("Click the button below to download the Word document.")
-        st.download_button(label="Download Data Monetization Strategy Document", data=doc_content, file_name="data_monetization_strategy_framework_docs.docx",
-                            )
+        st.write("Click the button below to download the data monetization strategy document.")
+        st.download_button(label="Download", data=doc_content, file_name="data_monetization_strategy_framework_docs.docx")
 
 if __name__ == '__main__':
     main()
